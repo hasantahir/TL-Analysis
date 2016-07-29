@@ -1,1 +1,66 @@
-This is a test
+\documentclass[11pt]{article}
+% Horizontal Magnetic Dipole over a lossy half-space
+\usepackage[utf8]{inputenc} % Use it to include other characters than ABC
+\usepackage[cmex10]{amsmath}
+\usepackage{mdwmath}
+\usepackage{mdwtab}
+\usepackage{hyperref}
+\usepackage{physics} % For using the oridnary derivative nomenclature
+\usepackage{datetime} % Insert date and time
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{graphicx}
+% \usepackage{mathptmx} % Times new Roman
+
+% ------------------------------- Useful Tricks Learnt
+% Use ={}& to align subequations to the left
+% Use = for single equations
+%
+% ----------------- To compile with references use the following order in Shell"
+% 1. pdflatex filename.tex
+% 2. bibtex filename (no extension)
+% 3. bibtex filename (no extension)
+% 4. pdflatex filename.tex
+% -----------------
+
+\begin{document}
+  \title{\textsc{Equivalent Tranmission Line Models for Layered Structures with Sources}\\}
+  \date{\footnote{Last Modified: \currenttime, \today.}}
+  \maketitle
+ We consider a multilayered structure with piece-wise material that is assumed unbounded in the tranverse direction
+  \begin{subequations}
+    \begin{align}
+      \nabla\times{\bf E} ={}& -j \omega \mu \bf{H} -\bf{M},
+  		\label{eq:E}\\
+      \nabla\times{\bf H} ={}& j \omega \varepsilon \bf{E} + \bf{J}.
+  		\label{eq:H}
+    \end{align}
+    \label{eq:MaxE}
+  \end{subequations}
+
+For boundary-value problems involving planarly multilayer structures displaying symmetry along the $z$ direction, it is desirable to decompose the $\mathbf{\nabla}$ operator into two components, one $\dv{}{z}$ and the other to a transverse (to z) operator, $\mathbf{\nabla_t}$ \cite[p. 64]{felsen1994radiation}. The analysis can be simplified by taking Fourier transform represented by the operator $\mathcal{F}$, in both $x$ and $y$ directions. This transforms the $\mathbf{\nabla}$ operator to $-j k_x \mathbf{\hat{x}} - j k_y \mathbf{\hat{y}} + \mathbf{\hat{z}}\dv{}{z}$ containing only a single derivative in $z$.
+The Fourier transform along with its inverse is defined as:
+
+\begin{subequations}
+  \begin{align}
+    \mathcal{F}[f(\mathbf{r})] \equiv \tilde{f}(\mathbf{k_{\rho}},z) ={}& \int_{-\infty}^{\infty} \int_{-\infty}^{\infty}
+    f(\mathbf{r}) \exp(-j \mathbf{k_{\rho}} \cdot \mathbf{\rho}) dx dy
+    \label{eq:Fourier}\\
+    \mathcal{F}^{-1}[\tilde{f}(\mathbf{k_{\rho}},z)] \equiv f(\mathbf{r}) ={}& \frac{1}{(2\pi)^2} \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} \tilde{f}(\mathbf{k_{\rho}},z)
+    \exp(j \mathbf{k_{\rho}} \cdot \mathbf{\rho}) dk_x dk_y
+    \label{eq:IFourier}
+  \end{align}
+  \label{eq:FT}
+\end{subequations}
+ where,
+ \begin{equation}
+   \mathbf{\rho} = x\mathbf{\hat{x}} + y\mathbf{\hat{y}},
+   \mathbf{k_{\rho}} = k_x\mathbf{\hat{x}} + k_y\mathbf{\hat{y}},
+ \end{equation}
+
+The Maxwell's equations (\ref{eq:MaxE})
+
+
+\bibliography{mylib}
+\bibliographystyle{ieeetr}
+
+\end{document}
