@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.21)  2 AUG 2016 12:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.21)  2 AUG 2016 13:38
 entering extended mode
 **./TL.tex
 (TL.tex
@@ -1776,15 +1776,17 @@ File: fig_coordinate.pdf Graphic file (type pdf)
 Package pdftex.def Info: fig_coordinate.pdf used on input line 209.
 (pdftex.def)             Requested size: 283.67422pt x 209.02531pt.
  [2] [3 <./fig_coordinate.pdf>]
-<source_configuration.pdf, id=133, 498.25479pt x 999.0687pt>
+<source_configuration.pdf, id=127, 498.25479pt x 999.0687pt>
 File: source_configuration.pdf Graphic file (type pdf)
 
 <use source_configuration.pdf>
-Package pdftex.def Info: source_configuration.pdf used on input line 283.
+Package pdftex.def Info: source_configuration.pdf used on input line 281.
 (pdftex.def)             Requested size: 298.95517pt x 599.44585pt.
- (TL.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 311.
- [4]
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4]
 
 LaTeX Warning: Text page 5 contains only floats.
 
@@ -1792,23 +1794,27 @@ LaTeX Warning: Text page 5 contains only floats.
 Overfull \vbox (1.74501pt too high) has occurred while \output is active []
 
 
-[5 <./source_configuration.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 311.
+[5 <./source_configuration.pdf>] (TL.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 292.
+ [6
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 292.
  (TL.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 311.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 311.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 292.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 292.
 Package rerunfilecheck Info: File `TL.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 311.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 292.
  ) 
 Here is how much of TeX's memory you used:
- 15301 strings out of 493335
- 257329 string characters out of 3139257
+ 15302 strings out of 493335
+ 257335 string characters out of 3139257
  351812 words of memory out of 10000000
  18659 multiletter control sequences out of 15000+200000
  10684 words of font info for 37 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,18n,68p,10424b,364s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,18n,68p,10424b,370s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTe
@@ -1823,9 +1829,9 @@ es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmti10.pfb>
-Output written on TL.pdf (5 pages, 261219 bytes).
+Output written on TL.pdf (6 pages, 262470 bytes).
 PDF statistics:
- 233 PDF objects out of 1000 (max. 8388607)
- 48 named destinations out of 1000 (max. 500000)
+ 238 PDF objects out of 1000 (max. 8388607)
+ 49 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
