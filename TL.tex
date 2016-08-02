@@ -56,8 +56,8 @@
     \label{eq:MaxE}
   \end{subequations}
 
-  For boundary-value problems involving planarly multilayer structures displaying symmetry along the $z$ direction, it is desirable to decompose the $\v{\del}$ operator into two components, one $\dv{}{z}$ and the other to a transverse (to z) operator, $\v{\del_t}$ \cite[p. 64]{felsen1994radiation}. The analysis can be simplified by taking Fourier transform represented by the operator $\mathcal{F}$, in both $x$ and $y$ directions. This transforms the $\v{\del}$ operator to $-j k_x \v{\^{x}} - j k_y \v{\^{y}} + \v{\^{z}}\dv{}{z}$
-  containing only a single derivative in $z$.
+  For boundary-value problems involving planarly multilayer structures displaying symmetry along the $z$ direction, it is desirable to decompose the $\v{\del}$ operator into two components, one $\dv{}{z}$ and the other a transverse (to z) operator, $\v{\del_t}$ \cite[p. 64]{felsen1994radiation}. The analysis can be simplified by taking Fourier transform represented by the operator $\mathcal{F}$, in both $x$ and $y$ directions. This reduces the vector differential, $\v{\del}$ operator to $-j k_x \v{\^{x}} - j k_y \v{\^{y}} + \v{\^{z}}\dv{}{z}$
+  reducing to a single derivative in $z$.
   The Fourier transform along with its inverse is defined as:
 
   \begin{subequations}
@@ -76,9 +76,9 @@
     \v{\p} = x\v{\^{x}} + y\v{\^{y}},
     \v{k_{\p}} = k_x\v{\^{x}} + k_y\v{\^{y}},
   \end{equation}
-  and the $~$ above indicates the Fourier transform with respect to the transverse coordinates.
+  and the $~$ above indicates the Fourier transform with respect to the transverse coordinates and from here on, will be used to denote spectral quantities.
 
-  As stated earlier, it is advantageous to separate the fields in transverse and longitudinal coordinates since as we shall shortly, the longitudinal component can be completely described in terms of the transverse one. Taking the Fourier transform of the Maxwell's equations (\ref{eq:MaxE}), we obtain:
+  As stated earlier, it is advantageous to separate the fields in transverse and longitudinal coordinates since, as we shall shortly, the longitudinal part of the field can be completely expressed in terms of the transverse component. Appling the Fourier transform (\ref{eq:Fourier} on the Maxwell's equations (\ref{eq:MaxE}), we obtain:
 
   \begin{subequations}
     \begin{align}
@@ -123,15 +123,15 @@
     \label{eq:FT_sLE}
   \end{equation}
   %
-  Scalar representation of (\ref{eq:FT_sLE}) can be written as:
+  which can be written in the scalar form,
   %
   \begin{equation}
     -j \O \u \ti{H}_z =
-    -j \v{k_{\p}} \cdot (\v{\ti{E}_t} \x \v{\^{z}}) + {\ti{M}_z}
+    -j \v{k_{\p}} \cdot (\v{\ti{E}_t} \x \v{\^{z}}) + {\ti{M}_z}.
     \label{eq:sLH}
   \end{equation}
   %
-  Taking cross product with unit vector $\v{\^{z}}$ on both sides, the transverse electric field component is expressed as:
+  Taking the vector cross product with unit vector $\v{\^{z}}$ on both sides, the transverse electric field component is expressed as:
   %
   \begin{equation}
     \begin{split}
@@ -146,7 +146,7 @@
   %
   where the BAC-CAB vector triple product identity, $(\v{A} \x \v{B})\x\v{C} = \v{B}(\v{A} \cdot \v{C}) - \v{C}(\v{A} \cdot \v{B})$ has been used.
 
-  Following similar procedure beginning with (\ref{eq:FT_H}), we obtain the transverse magnetic field and scalar longitudinal component of the electric field.
+  Following similar procedure performed on the magnetic field starting with (\ref{eq:FT_H}), we obtain the transverse magnetic field and scalar longitudinal component of the electric field.
   %
   \begin{equation}
     \begin{split}
@@ -185,7 +185,7 @@
   %
   where $k = \O \sqrt{\u \E}$ is the medium wave-vector in (\ref{eq:Et}) and (\ref{eq:Ht}).
 
-  The electric and magnetic fields in (\ref{eq:Et}) and (\ref{eq:Ht}) lie in a spectral coordinate system as illustrated in Fig. \ref{fig:SpCS}. A rotational transformation of the coordinate system such that the axes align with the vectors $\v{k_{\p}}, \v{\^z} \x \v{k_{\p}}$ \cite{itoh1980spectral}. The transformation can be expressed as:
+  The electric and magnetic fields in (\ref{eq:Et}) and (\ref{eq:Ht}) for arbitrarily aligned sources lie in the plane of a spectral coordinate system as illustrated in Fig. \ref{fig:SpCS}. A rotational transformation of the coordinate system such that the axes align with the vectors $\v{k_{\p}}, \v{\^z} \x \v{k_{\p}}$ \cite{itoh1980spectral}, simplifies the procedure of finding the transmission line equivalent. The coordinate transformation can be expressed as:
   \begin{equation}
     \left[\begin{array}{c}
     \v{\^u} \\
@@ -242,7 +242,7 @@
     \dv{V^h}{z} = \frac{1}{j \O \E}k^2 I^h + \ti{M}_u
     \label{eq:V_TE}
   \end{equation}
-
+%
   Similarly, from (\ref{eq:EHVI}) and (\ref{eq:Ht}), the current equivalent equations can be written as:
   \begin{equation}
     \dv{I^e}{z} = \frac{1}{j \O \u}k^2 V^e - \ti{J}_u
@@ -252,7 +252,7 @@
     \dv{I^h}{z} = \frac{-1}{j \O \u}\left( k^2 - k_{\p}^2 \right)V^h + k_{\p}\frac{\ti{M}_z}{\O \u} + \ti{J}_v
     \label{eq:I_TE}
   \end{equation}
-
+%
   Equations (\ref{eq:V_TM}-\ref{eq:I_TE}) can be conveniently written collectively as a set of Telegrapher's equations \cite[p. 1166]{michalski2005electromagnetic}:
   \begin{subequations}
     \begin{align}
@@ -275,16 +275,17 @@
     \end{split}
     \label{eq:Z}
   \end{equation}
-
-  From the preceding discussion, six source configurations, three each for electric and magnetic currents lead to a TM/TE based trasnmission line (TL). The type and strength of the TL excitation is determined from (\ref{eq:V_TM})-(\ref{eq:TLE}) and is summarized in Fig. \ref{fig:Sources}.
-
-  \begin{figure}[t!]
+%
+  \begin{figure}[h!]
     \centering
     {\includegraphics[scale=.6]{source_configuration.pdf}}
     \caption{Current Configuration and the respective TL equivalent}
     \label{fig:Sources}
   \end{figure}
 
+  From the preceding discussion, six source configurations, three each for electric and magnetic currents lead to a TM/TE based trasnmission line (TL). The type of the TL excitation is determined and expressed through (\ref{eq:V_TM})-(\ref{eq:TLE}). The different configurations are illustrated in Fig. \ref{fig:Sources}.
+
+  \clearpage % Force Bibliography to the end of document
   \bibliography{mylib}
   \bibliographystyle{ieeetr}
 
