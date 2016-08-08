@@ -9,6 +9,13 @@
 \usepackage{datetime} % Insert date and time
 \usepackage[letterpaper, margin=1in]{geometry}
 \usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{standalone}
+\usepackage[americanresistors,americaninductors]{circuitikz}
+\usetikzlibrary{positioning}
+\usetikzlibrary{arrows}
+\usepackage{subfig}
 % \usepackage{mathptmx} % Times new Roman
 
 % ------------------------------- Useful Tricks Learnt
@@ -242,7 +249,7 @@
     \dv{V^h}{z} = \frac{1}{j \O \E}k^2 I^h + \ti{M}_u
     \label{eq:V_TE}
   \end{equation}
-%
+  %
   Similarly, from (\ref{eq:EHVI}) and (\ref{eq:Ht}), the current equivalent equations can be written as:
   \begin{equation}
     \dv{I^e}{z} = \frac{1}{j \O \u}k^2 V^e - \ti{J}_u
@@ -252,7 +259,7 @@
     \dv{I^h}{z} = \frac{-1}{j \O \u}\left( k^2 - k_{\p}^2 \right)V^h + k_{\p}\frac{\ti{M}_z}{\O \u} + \ti{J}_v
     \label{eq:I_TE}
   \end{equation}
-%
+  %
   Equations (\ref{eq:V_TM}-\ref{eq:I_TE}) can be conveniently written collectively as a set of Telegrapher's equations \cite[p. 1166]{michalski2005electromagnetic}:
   \begin{subequations}
     \begin{align}
@@ -275,14 +282,55 @@
     \end{split}
     \label{eq:Z}
   \end{equation}
-%
-  \begin{figure}[h!]
+  %
+
+  \begin{figure}[h]
     \centering
-    {\includegraphics[scale=.6]{source_configuration.pdf}}
-    \caption{Current Configuration and the respective TL equivalent}
-    \label{fig:Sources}
+    \subfloat[]{
+    \centering
+    {\includestandalone[width=.55\textwidth]{figures/jx}}
+    \label{fig:jx_source}
+    }
+    \newline
+    \subfloat[]{
+    \centering
+    {\includestandalone[width=.55\textwidth]{figures/jy}}
+    \label{fig:jy_source}
+    }
+    \newline
+    \subfloat[]{ %Use [] to put subfigure number
+    \centering
+    {\includestandalone[width=.55\textwidth]{figures/jz}}
+    \label{fig:jz_source}
+    }
+    \newline
+    \caption{Electric Source Representation}
+    \label{fig:J_sources}
   \end{figure}
 
+  \begin{figure}[h]
+    \centering
+    \subfloat[]{
+    \centering
+    {\includestandalone[width=.55\textwidth]{figures/mx}}
+    \label{fig:mx_source}
+    }
+    \newline
+    \subfloat[]{
+    \centering
+    {\includestandalone[width=.55\textwidth]{figures/my}}
+    \label{fig:my_source}
+    }
+    \newline
+    \subfloat[]{ %Use [] to put subfigure number
+    \centering
+    {\includestandalone[width=.55\textwidth]{figures/mz}}
+    \label{fig:mz_source}
+    }
+    \newline
+    \caption{Magnetic Source Representation}
+    \label{fig:M_sources}
+  \end{figure}
   From the preceding discussion, six source configurations, three each for electric and magnetic currents lead to a TM/TE based trasnmission line (TL). The type of the TL excitation is determined and expressed through (\ref{eq:V_TM})-(\ref{eq:TLE}). The different configurations are illustrated in Fig. \ref{fig:Sources}.
 
   \clearpage % Force Bibliography to the end of document
