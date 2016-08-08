@@ -23,17 +23,7 @@
     \centering
     \subfloat{
     % \centering
-    {\includestandalone[width=\textwidth]{figures/jx}}
-    }
-    \newline
-    \subfloat{
-    % \centering
-    {\includestandalone[width=\textwidth]{figures/jy}}
-    }
-    \newline
-    \subfloat{
-    % \centering
-    {\includestandalone[width=\textwidth]{figures/jz}}
+    {\includestandalone[width=\textwidth]{figures/xsystem}}
     }
     \newline
     \caption{Cubic Spline Interpolation of a traveling car with fixed ends}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.21)  8 AUG 2016 00:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.21)  8 AUG 2016 01:00
 entering extended mode
 **./TL.tex
 (TL.tex
@@ -2310,26 +2310,22 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 57.
  [1
 
-{C:/Users/Phased/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-<fig_coordinate.pdf, id=54, 378.23323pt x 278.70111pt>
-File: fig_coordinate.pdf Graphic file (type pdf)
-
-<use fig_coordinate.pdf>
-Package pdftex.def Info: fig_coordinate.pdf used on input line 216.
-(pdftex.def)             Requested size: 283.67422pt x 209.02531pt.
- [2] [3 <./fig_coordinate.pdf>] (figures/jx.tex)
+{C:/Users/Phased/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (figures/x
+system.tex)
+File: figures/xsystem.tex Graphic file (type tex)
+ [2]
+[3] (figures/jx.tex)
 File: figures/jx.tex Graphic file (type tex)
-
-(figures/jy.tex)
+ (figures/jy.tex)
 File: figures/jy.tex Graphic file (type tex)
  (figures/jz.tex)
 File: figures/jz.tex Graphic file (type tex)
  (figures/mx.tex)
 File: figures/mx.tex Graphic file (type tex)
- (figures/my.tex)
-File: figures/my.tex Graphic file (type tex)
 
-(figures/mz.tex)
+(figures/my.tex)
+File: figures/my.tex Graphic file (type tex)
+ (figures/mz.tex)
 File: figures/mz.tex Graphic file (type tex)
 
 
@@ -2352,13 +2348,16 @@ Package rerunfilecheck Info: File `TL.out' has not changed.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 340.
  ) 
 Here is how much of TeX's memory you used:
- 43421 strings out of 493335
- 1023807 string characters out of 3139257
- 1289577 words of memory out of 10000000
- 46297 multiletter control sequences out of 15000+200000
+ 43436 strings out of 493335
+ 1024081 string characters out of 3139257
+ 1287355 words of memory out of 10000000
+ 46310 multiletter control sequences out of 15000+200000
  10684 words of font info for 37 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  67i,18n,102p,10424b,1241s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2377,9 +2376,9 @@ les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX
 ts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmti10.pfb>
-Output written on TL.pdf (6 pages, 228190 bytes).
+Output written on TL.pdf (6 pages, 212253 bytes).
 PDF statistics:
- 225 PDF objects out of 1000 (max. 8388607)
+ 189 PDF objects out of 1000 (max. 8388607)
  56 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
