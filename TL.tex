@@ -16,6 +16,8 @@
 \usetikzlibrary{positioning}
 \usetikzlibrary{arrows}
 \usepackage{subfig}
+% \usepackage{pdfsync} % use to back search tex lines from pdf
+% pdflatex -synctex=-1
 % \usepackage{mathptmx} % Times new Roman
 
 % ------------------------------- Useful Tricks Learnt
@@ -332,6 +334,37 @@
     \label{fig:M_sources}
   \end{figure}
   From the preceding discussion, six source configurations, three each for electric and magnetic currents lead to a TM/TE based trasnmission line (TL). The type of the TL excitation is determined and expressed through (\ref{eq:V_TM})-(\ref{eq:TLE}). The different configurations are illustrated in Fig. \ref{fig:Sources}.
+
+\section{Field Computation of a Horizontal Electric Dipole}
+
+We consider a horizontally polarized hertzian dipole lying above a half-space. The fields can be computed by using the transmission line dyadic Greens functions (TLDGF). For an electric source:
+
+\begin{subequations}
+  \begin{align}
+    \v{E}(\v{r}) = <\v{G}^{EJ} ; \v{J}(\v{r'})>
+    \label{eq:E_GJ}\\
+    \v{H}(\v{r}) = <\v{G}^{HJ} ; \v{J}(\v{r'})>
+  \end{align}
+  \label{eq:EH_GJ}
+\end{subequations}
+
+For the case of a unit-strength horizontal electric dipole,
+\begin{equation}
+  \v{J} = \^{\v{x}} \delta(z -h) \delta(x) \delta(y)
+  \label{eq:HED_J}
+\end{equation}
+
+where h is the height of the source from the interface at $z=0$. Using (\ref{eq:Fourier}), the spectral domain representation of the source (\ref{eq:HED_J}) can be written as:
+
+\begin{equation}
+  \ti{\v{J}} = \^{\v{x}} \delta(z -h)
+  \label{eq:f_HED_J}
+\end{equation}
+
+It should be observed that a source oriented in the transverse direction (x- or y- directed) will generate both TM and TE modes. Therefore, the current and voltage source based transmission line networks will be superposed in order to obtain the correct TLDGFs. We first solve the TM case. From (\ref{eq:TLE}) and (\ref{eq:f_HED_J}) ,we obtain:
+
+
+
 
   \clearpage % Force Bibliography to the end of document
   \bibliography{mylib}
